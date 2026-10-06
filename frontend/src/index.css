@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-obsidian: #0B0E14;
+  --color-navy: #223D4D;
+  --color-navy-dark: #172B37;
+  --color-navy-light: #2E5268;
+  --color-orange: #FF7328;
+  --color-orange-hover: #E85E15;
+  --color-orange-light: #FFF0E8;
+  --color-ice: #F0F3F6;
+
+  --color-indigo-50: #FFF0E8;
+  --color-indigo-100: #FFE4D5;
+  --color-indigo-200: #FFC6A8;
+  --color-indigo-600: #FF7328;
+  --color-indigo-700: #E85E15;
+  --color-indigo-800: #223D4D;
+  --color-indigo-900: #0B0E14;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+  
+  --palette-black: #0B0E14;
+  --palette-navy: #223D4D;
+  --palette-orange: #FF7328;
+  --palette-ice: #F0F3F6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0F3F6;
+  color: #0B0E14;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Color theme helper classes */
+.bg-palette-black { background-color: #0B0E14; }
+.bg-palette-navy { background-color: #223D4D; }
+.bg-palette-navy-dark { background-color: #172B37; }
+.bg-palette-navy-light { background-color: #2E5268; }
+.bg-palette-orange { background-color: #FF7328; }
+.bg-palette-orange-hover:hover { background-color: #E85E15; }
+.bg-palette-ice { background-color: #F0F3F6; }
+
+.text-palette-black { color: #0B0E14; }
+.text-palette-navy { color: #223D4D; }
+.text-palette-navy-dark { color: #172B37; }
+.text-palette-orange { color: #FF7328; }
+.text-palette-ice { color: #F0F3F6; }
+
+.border-palette-navy { border-color: #223D4D; }
+.border-palette-orange { border-color: #FF7328; }
+.border-palette-ice { border-color: #D9E2EC; }
+
+/* Custom Leaflet Map Container styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F3F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #223D4D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7328;
+}
+
+/* Glass & Card effects */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -10px rgba(11, 14, 20, 0.12);
+}

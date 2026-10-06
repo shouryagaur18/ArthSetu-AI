@@ -1,0 +1,42 @@
+[
+  {
+    "id": "user-rahul-sharma",
+    "email": "rahul.sharma@arthsetu.ai",
+    "password": "password123",
+    "name": "Rahul Sharma",
+    "user_type": "Beneficiary",
+    "age": 29,
+    "gender": "Male",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "social_category": "SC",
+    "annual_family_income": 320000,
+    "education_level": "Graduate",
+    "current_student_status": "No",
+    "bpl_status": "No",
+    "purpose": "Business",
+    "business_type": "Tailoring",
+    "project_cost": 400000,
+    "loan_required": 300000,
+    "preferred_tenure_years": 5,
+    "profile_completion": 80
+  },
+  {
+    "id": "user-partner-manager",
+    "email": "partner@psbank.co.in",
+    "password": "password123",
+    "name": "Suresh Gupta (Branch Manager)",
+    "user_type": "Partner",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "partner_id": "partner-bank-01"
+  },
+  {
+    "id": "user-admin",
+    "email": "admin@arthsetu.ai",
+    "password": "password123",
+    "name": "National Nodal Admin",
+    "user_type": "Admin",
+    "state": "All"
+  }
+]
